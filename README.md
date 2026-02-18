@@ -1,6 +1,6 @@
 # 🎫 Server Automated Deployment (Ansible)
 
-This repository provides Ansible playbooks to automate the end-to-end installation. By leveraging Docker, these playbooks ensure a consistent, reproducible, and isolated environment for your ticketing system.
+This repository provides Ansible playbooks to automate the end-to-end installation. By leveraging Docker, these playbooks ensure a consistent, reproducible, and isolated environment.
 📋 Table of Contents
 
     Features
@@ -51,5 +51,3 @@ ansible-playbook -i inventory.ini install_docker.yml
 ⚙️ Configuration
 Variable	Default	Description
 docker_compose_version	latest	Version of Docker Compose to install.
-osticket_port	80	Port where the web interface will be accessible.
-db_password	required	Secure password for the MySQL/MariaDB container.
