@@ -1,6 +1,6 @@
 # 🎫 Server Automated Deployment (Ansible)
 
-This repository provides Ansible playbooks to automate the end-to-end installation of osTicket. By leveraging Docker, these playbooks ensure a consistent, reproducible, and isolated environment for your ticketing system.
+This repository provides Ansible playbooks to automate the end-to-end installation. By leveraging Docker, these playbooks ensure a consistent, reproducible, and isolated environment for your ticketing system.
 📋 Table of Contents
 
     Features
