@@ -1,0 +1,25 @@
+---
+- name: Install Git on Oracle Linux 9
+  hosts: osticket_servers
+  become: true
+
+  tasks:
+
+    - name: Update all packages
+      dnf:
+        name: "*"
+        state: latest
+        update_cache: yes
+
+    - name: Install Git
+      dnf:
+        name: git
+        state: present
+
+    - name: Verify Git installation
+      command: git --version
+      register: git_version
+
+    - name: Show Git version
+      debug:
+        var: git_version.stdout
