@@ -1,0 +1,5 @@
+---
+- name: Instalar Git
+  package:
+    name: git
+    state: present

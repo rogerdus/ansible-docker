@@ -1,0 +1,4 @@
+---
+- name: Configurar zona horaria
+  timezone:
+    name: "{{ system_timezone }}"

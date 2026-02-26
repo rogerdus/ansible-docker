@@ -1,0 +1,9 @@
+---
+- name: Configurar zona horaria del servidor
+  hosts: servers
+  become: yes
+  tasks:
+
+    - name: Cambiar zona horaria a America/Mexico_City
+      timezone:
+        name: America/Mexico_City
